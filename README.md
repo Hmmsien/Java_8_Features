@@ -95,6 +95,19 @@ nums.forEach( n -> System.out.print(n) );
 - Starting with Java 8, interfaces can have  any number of static and default methods that, despite being declared in an interface, have a defined behavior.
 - Annotate that with @FunctionalInterface, 
 
+Static Interface Method	Default Method 
+1. It is a static method which belongs to the interface only. We can write implementation of this method in interface itself
+<br>It is a method with default keyword and class can override this method
+2. Method Invocation
+<br>Static method can invoke only on  interface class not on class.
+>br>It can be invoked on interface as well as class
+3.Method Name
+<br>Interface and implementing class , both can have static method with the same name without overriding each other.
+<br>We can override the default method in implementing class
+4.Use Case
+<br>It can be used as a utility method
+<Br>It can be used to provide common functionality in all implementing classes
+
 here come up the common interview questions 
 > Can we create an object of interface? <br>
 the answer is no. but we can create an implementation
