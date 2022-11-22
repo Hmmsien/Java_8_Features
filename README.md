@@ -133,6 +133,8 @@ The stream API creates a stream of value you have and then you can do operations
 > - Pipelining − Most of the stream operations return stream itself so that their result can be pipelined. These operations are called intermediate operations and their function is to take input, process them, and return output to the target. collect() method is a terminal operation which is normally present at the end of the pipelining operation to mark the end of the stream.
 > - Automatic iterations − Stream operations do the iterations internally over the source elements provided, in contrast to Collections where explicit iteration is required.
 
+if we want change the nums[0] to 8, but we don't to change the existing list that will make it mutable. and if we work with lots data or multiple threads it's always better to have immutable data. Then we could use stream.
+
 Code example here:
 ```java
 List<Integer> nums = Arrays.asList(4,5,6,7,8);
@@ -147,9 +149,7 @@ nums.stream()
         
 nums.forEach(n -> System.out.println(n));
 ```     
-**_NOTE:_** The asList() method of java.util.Arrays class is used to return a fixed-size list backed by the specified array. This method acts as a bridge between array-based and collection-based APIs, in combination with Collection.toArray(). The returned list is serializable and implements RandomAccess.
-if we want change the nums[0] to 8, but we don't to change the existing list that will make it mutable. and if we work with lots data or multiple threads it's always better to have immutable data. Then we could use stream.
-asList method returns a type of ArrayList that is different from java. util. ArrayList. The main difference is that the returned ArrayList only wraps an existing array — it doesn't implement the add and remove methods.
+**_NOTE:_** The asList() method of java.util.Arrays class is used to return a fixed-size list backed by the specified array. This method acts as a bridge between array-based and collection-based APIs, in combination with Collection.toArray(). The returned list is serializable and implements RandomAccess.asList method returns a type of ArrayList that is different from java. util. ArrayList. The main difference is that the returned ArrayList only wraps an existing array — it doesn't implement the add and remove methods.
 
 
 
