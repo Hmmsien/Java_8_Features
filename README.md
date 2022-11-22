@@ -100,7 +100,7 @@ Static Interface Method	Default Method
 <br>It is a method with default keyword and class can override this method
 2. Method Invocation
 <br>Static method can invoke only on  interface class not on class.
->br>It can be invoked on interface as well as class
+<br>It can be invoked on interface as well as class
 3. Method Name
 <br>Interface and implementing class , both can have static method with the same name without overriding each other.
 <br>We can override the default method in implementing class
@@ -138,8 +138,10 @@ Code example here:
 List<Integer> nums = Arrays.asList(4,5,6,7,8);
         
 nums.forEach(n -> System.out.println(n));
-```        
+```     
+**_NOTE:_** The asList() method of java.util.Arrays class is used to return a fixed-size list backed by the specified array. This method acts as a bridge between array-based and collection-based APIs, in combination with Collection.toArray(). The returned list is serializable and implements RandomAccess.
 if we want change the nums[0] to 8, but we don't to change the existing list that will make it mutable. and if we work with lots data or multiple threads it's always better to have immutable data. Then we could use stream.
+asList method returns a type of ArrayList that is different from java. util. ArrayList. The main difference is that the returned ArrayList only wraps an existing array — it doesn't implement the add and remove methods.
 
 ---
 
