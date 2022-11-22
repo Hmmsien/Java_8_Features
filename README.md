@@ -131,10 +131,10 @@ if we want change the nums[0] to 8, but we don't to change the existing list tha
 ---
 
 ### Resources
-https://www.cnblogs.com/CarpenterLee/p/6545321.html
-https://medium.com/javadeveloperdiary-jdd/understanding-streams-in-java-8-9ca2f33a3601
-https://www.tutorialspoint.com/java8/java8_streams.htm
-https://www.baeldung.com/java-8-new-features
+https://www.cnblogs.com/CarpenterLee/p/6545321.html <br>
+https://medium.com/javadeveloperdiary-jdd/understanding-streams-in-java-8-9ca2f33a3601 <br>
+https://www.tutorialspoint.com/java8/java8_streams.htm <br>
+https://www.baeldung.com/java-8-new-features <br>
 
 
 
