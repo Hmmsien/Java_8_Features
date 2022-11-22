@@ -100,11 +100,11 @@ Static Interface Method	Default Method
 <br>It is a method with default keyword and class can override this method
 2. Method Invocation
 <br>Static method can invoke only on  interface class not on class.
-<br>It can be invoked on interface as well as class
-3.Method Name
+>br>It can be invoked on interface as well as class
+3. Method Name
 <br>Interface and implementing class , both can have static method with the same name without overriding each other.
 <br>We can override the default method in implementing class
-4.Use Case
+4. Use Case
 <br>It can be used as a utility method
 <br>It can be used to provide common functionality in all implementing classes
 
