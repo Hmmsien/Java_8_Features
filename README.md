@@ -23,7 +23,7 @@ a non-LTS version of java is only supported for 6 months!
 
 ---
 ## Java 8 Features
-Java 8 was a massive release and you can find a list of all features at the Oracle website.
+Java 8 was a massive release and you can find a list of all features at the [Oracle website](https://www.oracle.com/java/technologies/javase/8-whats-new.html).
 
 ### Lambda expression
 A Lambda expression (or function) is an anonymous function (without any name or identifier, return type and access modifier.)
@@ -137,11 +137,21 @@ Code example here:
 ```java
 List<Integer> nums = Arrays.asList(4,5,6,7,8);
         
+Stream<Integer> data = nums.stream();
+
+nums.stream()
+        .filter(n -> n > 3)
+        .sorted()
+        .map((n -> n*2))
+        .forEach(n -> System.out.println(n));
+        
 nums.forEach(n -> System.out.println(n));
 ```     
 **_NOTE:_** The asList() method of java.util.Arrays class is used to return a fixed-size list backed by the specified array. This method acts as a bridge between array-based and collection-based APIs, in combination with Collection.toArray(). The returned list is serializable and implements RandomAccess.
 if we want change the nums[0] to 8, but we don't to change the existing list that will make it mutable. and if we work with lots data or multiple threads it's always better to have immutable data. Then we could use stream.
 asList method returns a type of ArrayList that is different from java. util. ArrayList. The main difference is that the returned ArrayList only wraps an existing array — it doesn't implement the add and remove methods.
+
+
 
 ---
 
